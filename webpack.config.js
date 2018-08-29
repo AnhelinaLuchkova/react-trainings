@@ -15,6 +15,19 @@ const parts = {
       filename: 'index.js',
       publicPath,
     },
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          vendor: {
+            chunks: 'initial',
+            name: 'vendor',
+            test: 'vendor',
+            enforce: true,
+          },
+        },
+      },
+      runtimeChunk: true,
+    },
     resolve: {
       modules: ['node_modules', './src'],
     },
@@ -33,8 +46,8 @@ const parts = {
         name: title,
         short_name: title,
         description: title,
-        background_color: '#ffffff',
-        theme_color: '#000000',
+        background_color: '#99ccff',
+        theme_color: '#66ccff',
         start_url: './index.html',
         display: 'standalone',
         icons: [
