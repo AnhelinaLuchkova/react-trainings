@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { GoodsList } from 'components/pages';
+import { ProductsList } from 'components/pages';
 
 export default function App() {
-  return <GoodsList />;
+  return <ProductsList />;
 }
 
 App.displayName = 'App';

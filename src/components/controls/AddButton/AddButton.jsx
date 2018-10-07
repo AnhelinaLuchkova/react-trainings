@@ -16,7 +16,7 @@ function AddButton({ isDisplayed }) {
   );
 }
 
-AddButton.displayName = 'Button';
+AddButton.displayName = 'AddButton';
 
 AddButton.propTypes = {
   isDisplayed: PropTypes.bool,

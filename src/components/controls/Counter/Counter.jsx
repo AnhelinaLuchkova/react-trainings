@@ -36,7 +36,7 @@ function Counter({ isDisplayed }) {
   );
 }
 
-Counter.displayName = 'Button';
+Counter.displayName = 'Counter';
 
 Counter.propTypes = {
   text: PropTypes.string,
