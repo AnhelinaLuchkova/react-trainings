@@ -71,6 +71,6 @@ module.exports = {
     contentBase: false,
     historyApiFallback: true,
     host: '0.0.0.0',
-    port: 1000,
+    port: 1001,
   },
 };

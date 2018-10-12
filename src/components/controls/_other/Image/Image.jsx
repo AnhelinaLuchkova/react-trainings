@@ -8,7 +8,7 @@ function Image({ imageUrl, altText }) {
       alt={altText}
       style={{
         display: 'inline-block',
-        width: '300px',
+        width: '150px',
       }}
     />
   );
