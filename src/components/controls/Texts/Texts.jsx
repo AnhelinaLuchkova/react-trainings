@@ -12,4 +12,6 @@ const FormItemText = styled.span``;
 
 const FormSectionText = styled.span``;
 
-export BaseText, HeaderText, ProductText, PriceText, FormItemText, FormSectionText;
+export {
+  BaseText, HeaderText, ProductText, PriceText, FormItemText, FormSectionText,
+};
