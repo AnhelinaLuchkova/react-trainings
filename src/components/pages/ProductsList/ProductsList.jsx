@@ -1,29 +1,49 @@
 import React from 'react';
 import {
-  AddButton, Counter, Image, ImageLabelText, PriceText, Picture,
+import {
+  Counter, Picture, Input, Button,
 } from 'components/controls';
-import Button from 'components/controls/Button/Button';
+
+import {
+  Product,
+} from 'components/widgets';
 
 function ProductsList() {
   return (
-    <main>
+    <main
+      style={{
+        padding: '20px',
+      }}
+    >
       <br />
-      <Button>Some button</Button>
-      <br />
-      <br />
-      <AddButton isDisplayed />
+
+      <Product />
+
+      <br/> <br/>
+
+      <Button text="Buy"/>
+
+      <br/> <br/>
+
+      <Button text="Remove"/>
+
+      <br/> <br/>
+
       <Counter isDisplayed={true} />
-      <Image
-        imageUrl="https://via.placeholder.com/150/92c952"
-        altText="Sport Boots"
-      />
-      <br />
+
+      <br/> <br/>
+
+      <br/> <br/>
+
       <Picture
         pictureUrl="https://via.placeholder.com/150/92c952"
         altText="Sport Boots"
       />
-      <ImageLabelText text="Boots" />
-      <PriceText text="$45" />
+
+      <br/> <br/>
+
+      <Input />
+
     </main>
   );
 }

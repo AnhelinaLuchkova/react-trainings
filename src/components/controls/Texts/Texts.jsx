@@ -1,17 +1,19 @@
 import styled from 'styled-components';
 
-const BaseText = styled.span``;
+const Text = styled.span`
+  font-size: 14px;
+`;
 
-const HeaderText = styled.span``;
+const HeaderText = styled(Text)``;
 
-const ProductText = styled.span``;
+const ProductText = styled(Text)``;
 
-const PriceText = styled.span``;
+const PriceText = styled(Text)``;
 
-const FormItemText = styled.span``;
+const FormItemText = styled(Text)``;
 
-const FormSectionText = styled.span``;
+const FormSectionText = styled(Text)``;
 
 export {
-  BaseText, HeaderText, ProductText, PriceText, FormItemText, FormSectionText,
+  Text, HeaderText, ProductText, PriceText, FormItemText, FormSectionText,
 };

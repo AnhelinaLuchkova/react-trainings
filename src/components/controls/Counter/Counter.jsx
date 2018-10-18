@@ -1,37 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FaPlus, FaMinus } from 'react-icons/fa';
+import CounterStyled from './CounterStyled';
 
 function Counter({ isDisplayed }) {
   return (
     isDisplayed && (
-      <div>
-        <button
-          type="button"
-          style={{
-            display: 'inline-block',
-          }}
-        >
-          -
+      <CounterStyled>
+        <button type="button" class="btn btn-minus">
+          <FaMinus />
         </button>
 
-        <div
-          type="button"
-          style={{
-            display: 'inline-block',
-          }}
-        >
-          2
-        </div>
+        <input class="input" type="text" />
 
-        <button
-          type="button"
-          style={{
-            display: 'inline-block',
-          }}
-        >
-          +
+        <button type="button" class="btn btn-plus">
+          <FaPlus />
         </button>
-      </div>
+      </CounterStyled>
     )
   );
 }

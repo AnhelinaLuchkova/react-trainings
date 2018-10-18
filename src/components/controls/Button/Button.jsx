@@ -1,47 +1,27 @@
-import styled from 'styled-components';
+import React from 'react';
+import PropTypes from 'prop-types';
+import ButtonStyled from './ButtonStyled';
 
-const Button = styled.button`
+function Button({ text, isDisplayed }) {
+  return (
+    isDisplayed && (
+      <ButtonStyled>
+        {text}
+      </ButtonStyled>
+    )
+  );
+}
 
-  margin-left: 20px;
+Button.displayName = 'Button';
 
-  position:relative;
-  padding: 10px 12px;
-  border:none;
-  border-radius: 1px;
-  outline:none;
-  background-color: #e37222;
-  font-size: 16px;
-  color: #ffffff;
-  transition:800ms ease all;
-  cursor: pointer;
+Button.propTypes = {
+  text: PropTypes.string,
+  isDisplayed: PropTypes.bool,
+};
 
-  :hover {
-    background-color: #ffffff;
-    color: #e37222;
-  }
-
-  :before,:after{
-    content:'';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 2px;
-    width: 0;
-    background: #e37222;
-    transition: 400ms ease all;
-  }
-
-  :after{
-    right: inherit;
-    top: inherit;
-    left: 0;
-    bottom: 0;
-  }
-
-  :hover:before,:hover:after{
-    width: 100%;
-    transition: 800ms ease all;
-  }
-`;
+Button.defaultProps = {
+  text: '',
+  isDisplayed: true,
+};
 
 export default Button;
