@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-import {
   Counter, Picture, Input, Button,
 } from 'components/controls';
 
