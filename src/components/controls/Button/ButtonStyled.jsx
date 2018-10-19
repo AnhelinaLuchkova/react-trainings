@@ -8,14 +8,15 @@ const ButtonStyled = styled.button`
   border-radius: 1px;
   outline:none;
   background-color: #e37222;
+  font-family: "Arial";
   font-size: 20px;
   color: #ffffff;
   transition:800ms ease all;
   cursor: pointer;
 
   :hover {
-    background-color: #ffffff;
-    color: #e37222;
+    background-color: rgba(189, 189, 189, 0.5);
+    /* color: #e37222; */
   }
 
   :before,:after{

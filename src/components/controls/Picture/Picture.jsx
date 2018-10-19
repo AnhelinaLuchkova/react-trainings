@@ -8,9 +8,9 @@ const Picture = styled.img.attrs({
   width: props => props.width,
   height: props => props.height,
 })`
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  /* -webkit-border-radius: 20px; */
+  /* -moz-border-radius: 20px; */
+  /* border-radius: 20px; */
 `;
 
 Picture.displayName = 'Picture';
@@ -25,8 +25,8 @@ Picture.propTypes = {
 Picture.defaultProps = {
   pictureUrl: '',
   altText: PropTypes.string,
-  width: '200px',
-  height: '200px',
+  width: '180px',
+  height: '180px',
 };
 
 export default Picture;

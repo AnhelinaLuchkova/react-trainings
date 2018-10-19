@@ -1,12 +1,33 @@
 import styled from 'styled-components';
 
 const ProductStyled = styled.div`
-  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 
-  display: inline-block;
   width: 200px;
   height: 300px;
-  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+
+  background-color: rgba(189, 189, 189, 0.25);
+
+  > span {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 180px;
+  }
+
+  > div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-end;
+    width: 100%;
+  }
 `;
 
 export default ProductStyled;
