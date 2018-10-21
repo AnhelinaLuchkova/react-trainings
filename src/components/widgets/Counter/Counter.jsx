@@ -7,13 +7,13 @@ function Counter({ isDisplayed }) {
   return (
     isDisplayed && (
       <CounterStyled>
-        <button type="button" class="btn btn-minus">
+        <button type="button">
           <FaMinus />
         </button>
 
-        <input class="input" type="text" />
+        <input type="number" />
 
-        <button type="button" class="btn btn-plus">
+        <button type="button">
           <FaPlus />
         </button>
       </CounterStyled>
